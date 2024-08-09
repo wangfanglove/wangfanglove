@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./img/aixin.png">
+		<title>爱你哟~</title>
+	</head>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.body1 {
+			width: 100%;
+			height: 220px;
+			background-image: url("./img/fjt.webp");
+			background-size: 100%;
+			
+		}
+		.body2 {
+			width: 100%;
+			height: 250px;
+			background-color: #fff;
+		}
+		.body3 {
+			width: 100%;
+			height: 250px;
+		}
+		.boxc {
+			width: 100%;
+			margin: 0 auto;
+			
+		}
+		.bl {
+			transform: translateY(-68px);
+		}
+		.bl-1 {
+			/* position: fixed; */
+			float: left;
+			width: 100%;
+			height: 99px;
+			background-image: url("./img/bl.png");
+			background-size: 1200px;
+			opacity: 0.8;
+			animation: bl-1 19s linear infinite;
+
+		}
+		@keyframes bl-1{
+			0%{
+				transform: translateX(0%);
+			}
+			50%{
+				transform: translateX(-20%);
+				width: 125%;
+			}
+			100%{
+				transform: translateX(0%);
+			}
+			}
+		.bl-2 {
+			/* position: fixed; */
+			width: 100%;
+			height: 90px;
+			background-image: url("./img/bl3.png");
+			background-size: 1200px;
+			opacity: 0.7;
+			animation: bl-2 21s linear infinite;
+
+		}
+		@keyframes bl-2{
+			0%{
+				transform: translateX(0%);
+			}
+			50%{
+				transform: translateX(-20%);
+			    width: 125%;
+			}
+			100%{
+				transform: translateX(0%);
+			}
+		}
+		.ai {
+			width: 300px;
+			height: 150px;
+			padding-top: 40px;
+			margin: 0 auto;
+			
+		}
+		.wota {
+			display: flex;
+			width: 300px;
+			height: 110px;
+			margin: 0 auto;
+			
+		}
+		.wo {
+			float: left;
+			width: 70px;
+			height: 100px;
+			
+		}
+		.ta {
+			float: right;
+			width: 70px;
+			height: 100px;
+			
+		}
+		.aixin {
+			float: right;
+			width: 190px;
+			height: 100px;
+			
+		}
+		.aixin-img {
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+			background-image: url("./img/aixin.png");
+			background-size: 100%;
+			transform: translateY(25px);
+		}
+		.tou {
+			width: 70px;
+			height: 68px;
+			padding-top: 3px; 
+			border-radius: 50px; 
+			
+			box-shadow: 2px 4px 19px #666;
+			background-color: #a6afb0;
+			
+		}
+		.wo-tou {
+			width: 65px;
+			height: 65px;
+			margin: 0 auto;
+			border-radius: 50px; 
+			background-image: url("img/w.jpg");
+			background-size: 100%;
+			
+			
+		}
+		.ta-tou {
+			width: 65px;
+			height: 65px;
+			margin: 0 auto;
+			border-radius: 50px; 
+			background-image: url("img/f.jpg");
+			background-size: 100%;
+			
+			
+		}
+		.p {
+			font-size: 13px;
+			color: #fff;
+			line-height: 5px;
+			text-align: center;
+			text-shadow: 2px 2px 4px #333;
+
+		}
+		.p-2 {
+			font-size: 13px;
+			color: #9e279e;
+			line-height: 5px;
+			text-align: center;
+		}
+		.p-3 {
+			font-size: 13px;
+            text-align: center;
+		}
+		#timer {
+			width: 250px;
+			margin: 0 auto;
+			font-size: 12px;
+			display: flex;
+			transform: translateX(40px);
+		}
+		.time {
+			font-size: 30px;
+			font-weight: 600;
+		}
+	</style>
+	<body>
+		<div class="body1">
+			<div class="ai">
+				<div class="wota">
+					<div class="wo">
+						<div class="tou">
+							<div class="wo-tou">
+								
+							</div>
+						</div>
+							<p class="p">汪屹</p>
+					</div>
+					<div class="aixin">
+						<div class="aixin-img">
+							
+						</div>
+					</div>
+					<div class="ta">
+						<div class="tou">
+							<div class="ta-tou">
+								
+							</div>
+						</div>
+							<p class="p">方梓桐</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body2">
+			<div class="bl">
+				<div class="bl-1"></div>
+				<div class="bl-2"></div>
+				<br>
+				<p class="p-2">今天是我们相爱的</p>
+				
+				<div id="timer">
+				    <div id="days" class="time"></div>
+					<div style='line-height: 52px;color: #444'>
+						天
+					</div>
+				    <div id="hours" class="time"></div>
+					<div style='line-height: 52px;color: #444'>
+						时
+					</div>
+				    <div id="minutes" class="time"></div>
+					<div style='line-height: 52px;color: #444'>
+						分
+					</div>
+				    <div id="seconds" class="time"></div>
+					<div style='line-height: 52px;color: #444'>
+						秒
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="body3">
+			<div class="boxc">
+				<p class="p-3">❤️汪屹 & 方梓桐❤</p>
+			</div>
+		</div>
+	</body>
+	<script>
+	function updateTime() {
+	    // 设置开始日期
+	    var startDate = new Date("June 15, 2024 00:00:00").getTime();
+	
+	    // 获取当前日期
+	    var now = new Date().getTime();
+	
+	    // 计算时间差
+	    var timeDiff = now - startDate;
+	
+	    // 计算天数、小时数、分钟数和秒数
+	    var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+	    var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	    var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+	    var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+	
+	    // 显示时间
+	    
+	    document.getElementById("days").innerHTML = `${days}`;
+		document.getElementById("hours").innerHTML = `${hours}`;
+		document.getElementById("minutes").innerHTML = `${minutes}`;
+		document.getElementById("seconds").innerHTML = `${seconds}`;
+	}
+	
+	// 每秒更新一次时间
+	setInterval(updateTime, 1000);
+	
+	// 初次加载时更新时间
+	updateTime();
+	</script>
+</html>
